@@ -131,7 +131,7 @@
         <Component class="javax.swing.JTextField" name="jTextField1">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Monotype Corsiva" size="14" style="3"/>
+              <Font name="PT Mono" size="14" style="3"/>
             </Property>
           </Properties>
         </Component>
@@ -149,7 +149,7 @@
         <Component class="javax.swing.JTextField" name="jTextField3">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Monotype Corsiva" size="14" style="3"/>
+              <Font name="PT Mono" size="14" style="3"/>
             </Property>
           </Properties>
           <Events>
@@ -170,7 +170,7 @@
         <Component class="javax.swing.JLabel" name="jLabel5">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Showcard Gothic" size="18" style="3"/>
+              <Font name="Marker Felt" size="18" style="3"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Doctor id"/>
           </Properties>
@@ -178,7 +178,7 @@
         <Component class="javax.swing.JLabel" name="jLabel4">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Showcard Gothic" size="18" style="3"/>
+              <Font name="Marker Felt" size="18" style="3"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Patient Id"/>
           </Properties>
@@ -197,7 +197,7 @@
         <Component class="javax.swing.JLabel" name="jLabel3">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Showcard Gothic" size="18" style="3"/>
+              <Font name="Marker Felt" size="18" style="3"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Appointment Date"/>
           </Properties>
@@ -205,14 +205,14 @@
         <Component class="javax.swing.JTextField" name="jTextField4">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Monotype Corsiva" size="14" style="3"/>
+              <Font name="PT Mono" size="14" style="3"/>
             </Property>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel2">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Showcard Gothic" size="18" style="3"/>
+              <Font name="Marker Felt" size="18" style="3"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Appointment Number"/>
           </Properties>
@@ -220,7 +220,7 @@
         <Component class="javax.swing.JTextField" name="jTextField2">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Monotype Corsiva" size="14" style="3"/>
+              <Font name="PT Mono" size="14" style="3"/>
             </Property>
           </Properties>
         </Component>
@@ -271,7 +271,7 @@
         <Component class="javax.swing.JLabel" name="jLabel6">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Showcard Gothic" size="18" style="3"/>
+              <Font name="Marker Felt" size="18" style="3"/>
             </Property>
             <Property name="text" type="java.lang.String" value="DATE and TIME"/>
           </Properties>
@@ -279,7 +279,7 @@
         <Component class="javax.swing.JTextField" name="jTextField5">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Monotype Corsiva" size="14" style="3"/>
+              <Font name="PT Mono" size="14" style="3"/>
             </Property>
           </Properties>
         </Component>

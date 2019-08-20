@@ -52,7 +52,7 @@ public class appointment extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(246, 149, 246));
 
-        jTextField1.setFont(new java.awt.Font("Monotype Corsiva", 3, 14)); // NOI18N
+        jTextField1.setFont(new java.awt.Font("PT Mono", 3, 14)); // NOI18N
 
         jButton2.setFont(new java.awt.Font("Showcard Gothic", 3, 18)); // NOI18N
         jButton2.setText("CLEAR");
@@ -62,7 +62,7 @@ public class appointment extends javax.swing.JFrame {
             }
         });
 
-        jTextField3.setFont(new java.awt.Font("Monotype Corsiva", 3, 14)); // NOI18N
+        jTextField3.setFont(new java.awt.Font("PT Mono", 3, 14)); // NOI18N
         jTextField3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField3ActionPerformed(evt);
@@ -77,10 +77,10 @@ public class appointment extends javax.swing.JFrame {
             }
         });
 
-        jLabel5.setFont(new java.awt.Font("Showcard Gothic", 3, 18)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Marker Felt", 3, 18)); // NOI18N
         jLabel5.setText("Doctor id");
 
-        jLabel4.setFont(new java.awt.Font("Showcard Gothic", 3, 18)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Marker Felt", 3, 18)); // NOI18N
         jLabel4.setText("Patient Id");
 
         jButton3.setFont(new java.awt.Font("Showcard Gothic", 3, 18)); // NOI18N
@@ -91,15 +91,15 @@ public class appointment extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Showcard Gothic", 3, 18)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Marker Felt", 3, 18)); // NOI18N
         jLabel3.setText("Appointment Date");
 
-        jTextField4.setFont(new java.awt.Font("Monotype Corsiva", 3, 14)); // NOI18N
+        jTextField4.setFont(new java.awt.Font("PT Mono", 3, 14)); // NOI18N
 
-        jLabel2.setFont(new java.awt.Font("Showcard Gothic", 3, 18)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Marker Felt", 3, 18)); // NOI18N
         jLabel2.setText("Appointment Number");
 
-        jTextField2.setFont(new java.awt.Font("Monotype Corsiva", 3, 14)); // NOI18N
+        jTextField2.setFont(new java.awt.Font("PT Mono", 3, 14)); // NOI18N
 
         jPanel2.setBackground(new java.awt.Color(0, 0, 0));
         jPanel2.setForeground(new java.awt.Color(255, 255, 255));
@@ -125,10 +125,10 @@ public class appointment extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jLabel6.setFont(new java.awt.Font("Showcard Gothic", 3, 18)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Marker Felt", 3, 18)); // NOI18N
         jLabel6.setText("DATE and TIME");
 
-        jTextField5.setFont(new java.awt.Font("Monotype Corsiva", 3, 14)); // NOI18N
+        jTextField5.setFont(new java.awt.Font("PT Mono", 3, 14)); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -229,7 +229,7 @@ public class appointment extends javax.swing.JFrame {
           try{
             Class.forName("java.sql.DriverManager");
         Connection con = (Connection)
-        DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital","root", "<enter the password>");
+        DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital","<username>", "<password>");
         Statement stmt = (Statement) con.createStatement();
             String S="insert into appointment values('"+jTextField1.getText()+"','"+jTextField2.getText()+"','"+jTextField3.getText()+"','"+jTextField4.getText()+"','"+jTextField5.getText()+"');";
             stmt.executeUpdate(S);
@@ -270,7 +270,7 @@ public class appointment extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {

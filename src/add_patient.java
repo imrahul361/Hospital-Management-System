@@ -2,6 +2,8 @@
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import javax.swing.JOptionPane;
 
 /*
@@ -63,39 +65,39 @@ public class add_patient extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        jTextField4.setFont(new java.awt.Font("Showcard Gothic", 3, 18)); // NOI18N
+        jTextField4.setFont(new java.awt.Font("SignPainter", 2, 18)); // NOI18N
 
         jTextField10.setFont(new java.awt.Font("Showcard Gothic", 3, 18)); // NOI18N
 
-        jLabel7.setFont(new java.awt.Font("Berlin Sans FB", 3, 24)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Trattatello", 3, 24)); // NOI18N
         jLabel7.setText("PAYABLE AMOUNT");
 
-        jTextField3.setFont(new java.awt.Font("Showcard Gothic", 3, 18)); // NOI18N
+        jTextField3.setFont(new java.awt.Font("SignPainter", 2, 18)); // NOI18N
         jTextField3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField3ActionPerformed(evt);
             }
         });
 
-        jTextField1.setFont(new java.awt.Font("Showcard Gothic", 3, 18)); // NOI18N
+        jTextField1.setFont(new java.awt.Font("SignPainter", 2, 18)); // NOI18N
 
-        jTextField7.setFont(new java.awt.Font("Showcard Gothic", 3, 18)); // NOI18N
+        jTextField7.setFont(new java.awt.Font("SignPainter", 2, 18)); // NOI18N
 
-        jLabel6.setFont(new java.awt.Font("Berlin Sans FB", 3, 24)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Trattatello", 3, 24)); // NOI18N
         jLabel6.setText("DATE OF DISCHARGE(YYYY-MM-DD)");
 
-        jLabel10.setFont(new java.awt.Font("Berlin Sans FB", 3, 24)); // NOI18N
-        jLabel10.setText("ROOM NUMBER");
+        jLabel10.setFont(new java.awt.Font("Trattatello", 3, 24)); // NOI18N
+        jLabel10.setText("WARD NUMBER");
 
-        jTextField8.setFont(new java.awt.Font("Showcard Gothic", 3, 18)); // NOI18N
+        jTextField8.setFont(new java.awt.Font("SignPainter", 2, 18)); // NOI18N
 
-        jLabel8.setFont(new java.awt.Font("Berlin Sans FB", 3, 24)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Trattatello", 3, 24)); // NOI18N
         jLabel8.setText("DISEASE/TROUBLE");
 
-        jLabel9.setFont(new java.awt.Font("Berlin Sans FB", 3, 24)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Trattatello", 3, 24)); // NOI18N
         jLabel9.setText("DOCTOR ID NUMBER");
 
-        jButton2.setFont(new java.awt.Font("Showcard Gothic", 3, 18)); // NOI18N
+        jButton2.setFont(new java.awt.Font("Chalkboard", 3, 18)); // NOI18N
         jButton2.setText("CLEAR");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -103,24 +105,24 @@ public class add_patient extends javax.swing.JFrame {
             }
         });
 
-        jLabel5.setFont(new java.awt.Font("Berlin Sans FB", 3, 24)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Trattatello", 3, 24)); // NOI18N
         jLabel5.setText("DATE OF ADMISSION(YYYY-MM-DD)");
 
-        jTextField9.setFont(new java.awt.Font("Showcard Gothic", 3, 18)); // NOI18N
+        jTextField9.setFont(new java.awt.Font("SignPainter", 2, 18)); // NOI18N
 
-        jLabel3.setFont(new java.awt.Font("Berlin Sans FB", 3, 24)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Trattatello", 3, 24)); // NOI18N
         jLabel3.setText("ADDRESS");
 
-        jTextField6.setFont(new java.awt.Font("Showcard Gothic", 3, 18)); // NOI18N
+        jTextField6.setFont(new java.awt.Font("SignPainter", 2, 18)); // NOI18N
 
-        jTextField2.setFont(new java.awt.Font("Showcard Gothic", 3, 18)); // NOI18N
+        jTextField2.setFont(new java.awt.Font("SignPainter", 2, 18)); // NOI18N
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField2ActionPerformed(evt);
             }
         });
 
-        jButton3.setFont(new java.awt.Font("Showcard Gothic", 3, 18)); // NOI18N
+        jButton3.setFont(new java.awt.Font("Chalkboard", 3, 18)); // NOI18N
         jButton3.setText("EXIT");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -128,16 +130,16 @@ public class add_patient extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Berlin Sans FB", 3, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Trattatello", 3, 24)); // NOI18N
         jLabel1.setText("NAME");
 
-        jLabel4.setFont(new java.awt.Font("Berlin Sans FB", 3, 24)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Trattatello", 3, 24)); // NOI18N
         jLabel4.setText("PHONE NUMBER");
 
-        jLabel2.setFont(new java.awt.Font("Berlin Sans FB", 3, 24)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Trattatello", 3, 24)); // NOI18N
         jLabel2.setText("PATIENT ID NUMBER");
 
-        jButton4.setFont(new java.awt.Font("Showcard Gothic", 3, 18)); // NOI18N
+        jButton4.setFont(new java.awt.Font("Chalkboard", 3, 18)); // NOI18N
         jButton4.setText("BACK TO HOME");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -145,7 +147,7 @@ public class add_patient extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setFont(new java.awt.Font("Showcard Gothic", 3, 18)); // NOI18N
+        jButton1.setFont(new java.awt.Font("Chalkboard", 3, 18)); // NOI18N
         jButton1.setText("SUBMIT");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -153,11 +155,11 @@ public class add_patient extends javax.swing.JFrame {
             }
         });
 
-        jTextField5.setFont(new java.awt.Font("Showcard Gothic", 3, 18)); // NOI18N
+        jTextField5.setFont(new java.awt.Font("SignPainter", 2, 18)); // NOI18N
 
         jPanel2.setBackground(new java.awt.Color(148, 5, 5));
 
-        jLabel11.setFont(new java.awt.Font("Showcard Gothic", 3, 24)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Rockwell", 1, 24)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("ADD NEW PATIENT");
 
@@ -165,17 +167,17 @@ public class add_patient extends javax.swing.JFrame {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(326, 326, 326)
                 .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 299, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(268, 268, 268))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(15, Short.MAX_VALUE)
+                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -211,14 +213,14 @@ public class add_patient extends javax.swing.JFrame {
                             .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(43, 43, 43)
+                        .addGap(51, 51, 51)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jButton4)
                             .addComponent(jButton3)
                             .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jButton2)))
                     .addComponent(jTextField10))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(145, Short.MAX_VALUE))
             .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
@@ -232,57 +234,54 @@ public class add_patient extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(25, 25, 25)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel2)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel2)
+                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(23, 23, 23)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel3)
-                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel4)
-                            .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel5)
-                            .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel6)
-                        .addGap(32, 32, 32)
-                        .addComponent(jLabel7)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel3)
+                                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel4)
+                                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel5)
+                                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel6)
+                                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(32, 32, 32)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel7)
+                                    .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(48, 48, 48)
+                                .addComponent(jButton2)
+                                .addGap(49, 49, 49)
+                                .addComponent(jButton3)
+                                .addGap(47, 47, 47)
+                                .addComponent(jButton4)))
                         .addGap(23, 23, 23)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel8)
-                            .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(33, 33, 33))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(48, 48, 48)
-                        .addComponent(jButton2)
-                        .addGap(49, 49, 49)
-                        .addComponent(jButton3)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(47, 47, 47)
-                                .addComponent(jButton4))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(93, 93, 93)))
+                            .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(33, 33, 33)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel9)
-                    .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
+                    .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel10)
                     .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -324,14 +323,21 @@ public class add_patient extends javax.swing.JFrame {
         try{
             Class.forName("java.sql.DriverManager");
         Connection con = (Connection)
-        DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital","root", "<enter the password>");
+        DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital","<username>", "<password>");
         Statement stmt = (Statement) con.createStatement();
-
+        String phone = jTextField5.getText();
+        Pattern p = Pattern.compile("(0/91)?[7-9][0-9]{9}");
+        Matcher m = p.matcher(phone); 
+        if(!m.matches()) {
+        JOptionPane.showMessageDialog(null,"invalid number");
+            new home().setVisible(true);
+            dispose();}
+                else{
             String S="insert into patient values('"+jTextField1.getText()+"','"+jTextField2.getText()+"','"+jTextField3.getText()+"','"+jTextField4.getText()+"','"+jTextField5.getText()+"','"+jTextField6.getText()+"','"+jTextField7.getText()+"','"+jTextField8.getText()+"','"+jTextField9.getText()+"', '"+jTextField10.getText()+"');";
         stmt.executeUpdate(S);
             JOptionPane.showMessageDialog(null,"Record Successfully Inserted");
             jButton2.doClick();
-        }
+        }}
         catch(Exception e)
         {
             JOptionPane.showMessageDialog (this, e.getMessage());
@@ -372,7 +378,7 @@ public class add_patient extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {

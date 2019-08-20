@@ -41,7 +41,7 @@
               <Component id="jPanel1" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="24" max="32767" attributes="0"/>
+              <EmptySpace pref="21" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -129,7 +129,7 @@
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jButton2" pref="36" max="32767" attributes="0"/>
+                      <Component id="jButton2" pref="33" max="32767" attributes="0"/>
                       <Component id="jButton3" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
@@ -141,14 +141,14 @@
         <Component class="javax.swing.JTextField" name="jTextField1">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Monotype Corsiva" size="18" style="3"/>
+              <Font name="Bodoni 72 Smallcaps" size="18" style="3"/>
             </Property>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel2">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Berlin Sans FB" size="24" style="3"/>
+              <Font name="Bradley Hand" size="24" style="3"/>
             </Property>
             <Property name="text" type="java.lang.String" value="search by:"/>
           </Properties>
@@ -156,7 +156,7 @@
         <Component class="javax.swing.JLabel" name="jLabel6">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Berlin Sans FB" size="24" style="3"/>
+              <Font name="Apple Chancery" size="24" style="3"/>
             </Property>
             <Property name="text" type="java.lang.String" value="PHONE"/>
           </Properties>
@@ -164,21 +164,21 @@
         <Component class="javax.swing.JTextField" name="jTextField3">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Monotype Corsiva" size="18" style="3"/>
+              <Font name="Bodoni 72 Smallcaps" size="18" style="3"/>
             </Property>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField2">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Monotype Corsiva" size="18" style="3"/>
+              <Font name="Bodoni 72 Smallcaps" size="18" style="3"/>
             </Property>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel7">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Berlin Sans FB" size="24" style="3"/>
+              <Font name="Apple Chancery" size="24" style="3"/>
             </Property>
             <Property name="text" type="java.lang.String" value="NAME"/>
           </Properties>
@@ -186,7 +186,7 @@
         <Component class="javax.swing.JButton" name="jButton2">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Showcard Gothic" size="18" style="3"/>
+              <Font name="Baskerville" size="18" style="3"/>
             </Property>
             <Property name="text" type="java.lang.String" value="CLEAR DATA"/>
           </Properties>
@@ -197,7 +197,7 @@
         <Component class="javax.swing.JButton" name="jButton1">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Showcard Gothic" size="18" style="3"/>
+              <Font name="Baskerville" size="18" style="3"/>
             </Property>
             <Property name="text" type="java.lang.String" value="SEARCH"/>
           </Properties>
@@ -208,7 +208,7 @@
         <Component class="javax.swing.JLabel" name="jLabel3">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Berlin Sans FB" size="24" style="3"/>
+              <Font name="Apple Chancery" size="24" style="3"/>
             </Property>
             <Property name="text" type="java.lang.String" value="ENTER ID NUMBER"/>
           </Properties>
@@ -216,7 +216,7 @@
         <Component class="javax.swing.JLabel" name="jLabel5">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Berlin Sans FB" size="24" style="3"/>
+              <Font name="Apple Chancery" size="24" style="3"/>
             </Property>
             <Property name="text" type="java.lang.String" value="ADDRESS"/>
           </Properties>
@@ -224,7 +224,7 @@
         <Component class="javax.swing.JTextField" name="jTextField4">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Monotype Corsiva" size="18" style="3"/>
+              <Font name="Bodoni 72 Smallcaps" size="18" style="3"/>
             </Property>
           </Properties>
           <Events>
@@ -234,7 +234,7 @@
         <Component class="javax.swing.JButton" name="jButton3">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Showcard Gothic" size="18" style="3"/>
+              <Font name="Baskerville" size="18" style="3"/>
             </Property>
             <Property name="text" type="java.lang.String" value="CLOSE"/>
           </Properties>

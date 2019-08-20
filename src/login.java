@@ -49,19 +49,19 @@ public class login extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(59, 150, 150));
 
-        jTextField1.setFont(new java.awt.Font("Monotype Corsiva", 3, 18)); // NOI18N
+        jTextField1.setFont(new java.awt.Font("Palatino", 3, 18)); // NOI18N
 
-        jPasswordField1.setFont(new java.awt.Font("Monotype Corsiva", 3, 18)); // NOI18N
+        jPasswordField1.setFont(new java.awt.Font("Palatino", 3, 18)); // NOI18N
         jPasswordField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jPasswordField1ActionPerformed(evt);
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Berlin Sans FB", 3, 24)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Chalkduster", 3, 24)); // NOI18N
         jLabel3.setText("USERNAME");
 
-        jButton1.setFont(new java.awt.Font("Showcard Gothic", 3, 18)); // NOI18N
+        jButton1.setFont(new java.awt.Font("Noteworthy", 3, 18)); // NOI18N
         jButton1.setText("LOGIN");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -69,7 +69,7 @@ public class login extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setFont(new java.awt.Font("Showcard Gothic", 3, 18)); // NOI18N
+        jButton2.setFont(new java.awt.Font("Noteworthy", 3, 18)); // NOI18N
         jButton2.setText("CLOSE");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -77,16 +77,16 @@ public class login extends javax.swing.JFrame {
             }
         });
 
-        jLabel4.setFont(new java.awt.Font("Berlin Sans FB", 3, 24)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Chalkduster", 3, 24)); // NOI18N
         jLabel4.setText("PASSWORD");
 
-        jLabel2.setFont(new java.awt.Font("Berlin Sans FB", 3, 24)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Chalkduster", 3, 24)); // NOI18N
         jLabel2.setText("SIGN IN");
 
         jPanel2.setBackground(new java.awt.Color(0, 0, 0));
         jPanel2.setForeground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setFont(new java.awt.Font("Showcard Gothic", 3, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Phosphate", 3, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("WELCOME TO HOSPITAL MANAGEMENT SYSTEM");
 
@@ -94,7 +94,7 @@ public class login extends javax.swing.JFrame {
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 638, Short.MAX_VALUE)
+            .addGap(0, 642, Short.MAX_VALUE)
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -109,16 +109,16 @@ public class login extends javax.swing.JFrame {
                 .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(31, 31, 31)
-                .addComponent(jLabel1)
+                .addGap(45, 45, 45)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 513, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(27, 27, 27)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 49, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
@@ -188,8 +188,8 @@ public class login extends javax.swing.JFrame {
 
         jPanel1Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jButton1, jButton2});
 
-        jPanel1.setBounds(10, 10, 648, 458);
-        jLayeredPane1.add(jPanel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane1.add(jPanel1);
+        jPanel1.setBounds(10, 10, 648, 459);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -219,7 +219,7 @@ public class login extends javax.swing.JFrame {
         // TODO add your handling code here:
         String username=jTextField1.getText();
         String password=new String(jPasswordField1.getPassword());
-        if(username.equalsIgnoreCase("rahul")&&password.equals("1234")) {
+        if(username.equals("rahul")&&password.equals("1234")) {
         JOptionPane.showMessageDialog(null,"Congratulations!! You are successfully logged in." + "\n" + "\n" +  
         "Welcome to Hospital Management System."+"\n"+"Please click OK to proceed.",
         " Result ",JOptionPane.NO_OPTION);
