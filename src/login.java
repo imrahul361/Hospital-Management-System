@@ -47,7 +47,7 @@ public class login extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(59, 150, 150));
+        jPanel1.setBackground(new java.awt.Color(84, 97, 235));
 
         jTextField1.setFont(new java.awt.Font("Palatino", 3, 18)); // NOI18N
 
@@ -83,10 +83,10 @@ public class login extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Chalkduster", 3, 24)); // NOI18N
         jLabel2.setText("SIGN IN");
 
-        jPanel2.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel2.setBackground(new java.awt.Color(0, 0, 51));
         jPanel2.setForeground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setFont(new java.awt.Font("Phosphate", 3, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Phosphate", 3, 26)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("WELCOME TO HOSPITAL MANAGEMENT SYSTEM");
 
@@ -110,7 +110,7 @@ public class login extends javax.swing.JFrame {
                 .addContainerGap())
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(45, 45, 45)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 513, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 525, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -189,7 +189,7 @@ public class login extends javax.swing.JFrame {
         jPanel1Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jButton1, jButton2});
 
         jLayeredPane1.add(jPanel1);
-        jPanel1.setBounds(10, 10, 648, 459);
+        jPanel1.setBounds(10, 10, 648, 463);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -219,13 +219,26 @@ public class login extends javax.swing.JFrame {
         // TODO add your handling code here:
         String username=jTextField1.getText();
         String password=new String(jPasswordField1.getPassword());
-        if(username.equals("rahul")&&password.equals("1234")) {
+        if(username.equals("Recep")&&password.equals("1234")) {
         JOptionPane.showMessageDialog(null,"Congratulations!! You are successfully logged in." + "\n" + "\n" +  
         "Welcome to Hospital Management System."+"\n"+"Please click OK to proceed.",
         " Result ",JOptionPane.NO_OPTION);
             new home().setVisible(true);
             dispose();} 
-        else{JOptionPane.showMessageDialog(null," Either username or password is incorrect! "
+        else if(username.equals("Doctor")&&password.equals("9876")){
+         JOptionPane.showMessageDialog(null,"Congratulations!! You are successfully logged in." + "\n" + "\n" +  
+        "Welcome Doctor,Have a Nice Day"+"\n"+"Please click OK to proceed.",
+        " Result ",JOptionPane.NO_OPTION);
+            new Doctor_login().setVisible(true);
+            dispose();
+    }else if(username.equals("Nurse")&&password.equals("5656")){
+         JOptionPane.showMessageDialog(null,"Congratulations!! You are successfully logged in." + "\n" + "\n" +  
+        "Welcome Nurse,Have a Nice Day"+"\n"+"Please click OK to proceed.",
+        " Result ",JOptionPane.NO_OPTION);
+            new Nurse_login().setVisible(true);
+            dispose();
+    }
+               else {JOptionPane.showMessageDialog(null," Either username or password is incorrect! "
          + "Sorry, please try again. "," Result ",JOptionPane.ERROR_MESSAGE);
             jTextField1.setText(null);
             jPasswordField1.setText(null);}
